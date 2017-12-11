@@ -45,7 +45,7 @@ rake install
 ```ruby
 require 'phenoscaperb'
 tax = Phenoscape::Taxa
-tax.taxon()
+tax.taxon(iri: "http://purl.obolibrary.org/obo/VTO_0067193")
 ```
 
 
