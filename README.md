@@ -40,30 +40,14 @@ rake install
 
 ## Examples, in Ruby repl
 
-### Registry module
-
-Nodes
+### Taxa module
 
 ```ruby
 require 'phenoscaperb'
-registry = Phenoscape::Registry
-registry.nodes(limit: 5)
+tax = Phenoscape::Taxa
+tax.taxon()
 ```
 
-Networks
-
-```ruby
-registry.networks(uuid: '16ab5405-6c94-4189-ac71-16ca3b753df7')
-```
-
-### Species module
-
-GBIF backbone
-
-```ruby
-species = Phenoscape::Species
-species.name_backbone(name: "Helianthus")
-```
 
 ## Meta
 

@@ -29,11 +29,11 @@ module Phenoscape
     # @example
     #      require 'phenoscaperb'
     #
-    #      tax = Taxa::Species
+    #      tax = Phenoscape::Taxa
     #      tax.taxon(iri: "http://purl.obolibrary.org/obo/VTO_0067193")
     def self.taxon(iri:, verbose: nil, options: nil)
 
-      arguments = { name: name }.tostrings
+      arguments = { iri: iri }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
       Request.new("taxon", opts, verbose, options).perform
     end
