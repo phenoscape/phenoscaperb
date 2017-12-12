@@ -15,37 +15,24 @@ For changes see the [Changelog][changelog]
 
 ## API
 
-xxx
+Taxa
 
-* `/xx` - `Phenoscape::Registry.nodes`
+* `/taxa` - `Phenoscape::Taxon.taxon`
+* `/taxon/with_rank` - `Phenoscape::Taxon.taxon_with_rank`
 
+Ontotrace
+
+* `/taxa` - `Phenoscape::Ontotrace.ontotrace`
 
 ## Install
-
-### Release version
-
-```
-gem install phenoscaperb
-```
 
 ### Development version
 
 ```
-git clone git@github.com:sckott/phenoscaperb.git
+git clone git@github.com:phenoscape/phenoscaperb.git
 cd phenoscaperb
 rake install
 ```
-
-## Examples, in Ruby repl
-
-### Taxa module
-
-```ruby
-require 'phenoscaperb'
-tax = Phenoscape::Taxa
-tax.taxon(iri: "http://purl.obolibrary.org/obo/VTO_0067193")
-```
-
 
 ## Meta
 
