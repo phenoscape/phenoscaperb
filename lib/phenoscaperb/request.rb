@@ -44,7 +44,13 @@ module Phenoscape
       conn.headers["X-USER-AGENT"] = make_ua
 
       res = conn.get self.endpt, self.args
-      return MultiJson.load(res.body)
+      
+      if !res.headers['content-type'].match(/json/).nil?
+        out = MultiJson.load(res.body)
+      else
+        out = res.body
+      end
+      return out
     end
 
   end
