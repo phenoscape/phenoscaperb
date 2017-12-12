@@ -1,0 +1,51 @@
+#!/usr/bin/env ruby
+
+require "thor"
+require "phenoscaperb"
+require "multi_json"
+
+class Sr < Thor
+  include Thor::Actions
+  # class_option :json, :type => :boolean, :default => false
+
+  desc "taxon [IRI]", "Get taxon by taxon IRI"
+  long_desc <<-LONGDESC
+    `ph taxon` accepts an IRI to search for taxa
+
+    # A single DOI
+    \x5$ ph taxon http://purl.obolibrary.org/obo/VTO_0067193
+
+    DOI: 10.1371/journal.pone.0033693
+    \x5type: journal-article
+    \x5title: Methylphenidate Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal Ganglia of Mice
+  LONGDESC
+  option :iri, :type => :string
+  def taxon(iri=nil)
+    tax = Phenoscape::Taxa
+    puts tax.taxon(iri: iri)
+  end
+
+  desc "version", "Get phenoscaperb version"
+  def version
+    puts Phenoscape::VERSION
+  end
+
+  # private
+
+  # def print_works(data)
+  #   if data.is_a? Array
+  #     data = data[0]['message']['items']
+  #   else
+  #     data = data.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
+  #   end
+  #   data.each do |x|
+  #     puts 'DOI: ' + x['DOI']
+  #     puts 'type: ' + x['type']
+  #     puts 'title: ' + x['title'][0]
+  #     puts
+  #   end
+  # end
+
+end
+
+Sr.start(ARGV)
