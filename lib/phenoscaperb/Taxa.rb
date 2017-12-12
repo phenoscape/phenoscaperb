@@ -11,7 +11,7 @@ require 'phenoscaperb/utils'
 ##
 # Phenoscape::Taxa
 #
-# Class to perform HTTP requests to the phenoscape API
+# Class to perform HTTP requests to the Phenoscape API
 # @!macro phenoscape_params
 #   @param offset [Fixnum] Number of record to start at, any non-negative integer. Default: 0
 #   @param limit [Fixnum] Number of results to return. Default: 100
@@ -23,7 +23,7 @@ module Phenoscape
     #
     # @!macro phenoscape_params
     # @!macro phenoscape_options
-    # @param name [String] a taxon IRI
+    # @param iri [String] a taxon IRI
     # @return [Hash] A hash
     #
     # @example
@@ -38,5 +38,25 @@ module Phenoscape
       Request.new("taxon", opts, verbose, options).perform
     end
 
+    # Retrieve all taxa with a given taxonomic rank, within the given super-taxon. Ranks are term IRIs from the taxonomic rank ontology such as order, family, genus, species.
+    #
+    # @!macro phenoscape_params
+    # @!macro phenoscape_options
+    # @param rank [String] a rank IRI
+    # @param in_taxon [String] a taxon IRI
+    # @return [Hash] A hash
+    #
+    # @example
+    #      require 'phenoscaperb'
+    #
+    #      tax = Phenoscape::Taxa
+    #      tax.taxon_with_rank(rank: "http://purl.obolibrary.org/obo/TAXRANK_0000003", in_taxon: "http://purl.obolibrary.org/obo/VTO_0000009")
+    def self.taxon_with_rank(rank:, in_taxon:, verbose: nil, options: nil)
+
+      arguments = { rank: rank, in_taxon: in_taxon }.tostrings
+      opts = arguments.delete_if { |k, v| v.nil? }
+      Request.new("taxon/with_rank", opts, verbose, options).perform
+    end
+    
   end
 end
