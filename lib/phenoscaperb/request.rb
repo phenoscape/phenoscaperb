@@ -1,5 +1,6 @@
 require "faraday"
 require "multi_json"
+require "nokogiri"
 require "phenoscaperb/error"
 require "phenoscaperb/constants"
 require 'phenoscaperb/utils'
@@ -48,7 +49,7 @@ module Phenoscape
       if !res.headers['content-type'].match(/json/).nil?
         out = MultiJson.load(res.body)
       else
-        out = res.body
+        out = Nokogiri::XML(res.body).to_hash
       end
       return out
     end

@@ -1,6 +1,7 @@
 require "faraday"
 require 'faraday_middleware'
 require "multi_json"
+require "xml/to/hash"
 require "phenoscaperb/error"
 require "phenoscaperb/request"
 require "phenoscaperb/constants"

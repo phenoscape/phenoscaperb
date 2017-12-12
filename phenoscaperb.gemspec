@@ -34,5 +34,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'faraday', '~> 0.12.0.1'
   s.add_runtime_dependency 'faraday_middleware', '~> 0.11.0.1'
   s.add_runtime_dependency 'thor', '~> 0.20.0'
+  s.add_runtime_dependency 'nokogiri', '~> 1.8', '>= 1.8.1'
+  s.add_runtime_dependency 'xml-to-hash', '~> 1.0', '>= 1.0.3'
   s.add_runtime_dependency 'multi_json', '~> 1.12', '>= 1.12.1'
 end
