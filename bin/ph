@@ -22,7 +22,7 @@ class Sr < Thor
   option :iri, :type => :string
   def taxon(iri=nil)
     tax = Phenoscape::Taxa
-    puts tax.taxon(iri: iri)
+    puts MultiJson.encode(tax.taxon(iri: iri))
   end
 
   desc "version", "Get phenoscaperb version"
