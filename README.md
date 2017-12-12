@@ -1,9 +1,7 @@
 phenoscaperb
 ======
 
-[![gem version](https://img.shields.io/gem/v/phenoscaperb.svg)](https://rubygems.org/gems/phenoscaperb)
-[![Build Status](https://travis-ci.org/sckott/phenoscaperb.svg?branch=master)](https://travis-ci.org/sckott/phenoscaperb)
-[![codecov.io](http://codecov.io/github/sckott/phenoscaperb/coverage.svg?branch=master)](http://codecov.io/github/sckott/phenoscaperb?branch=master)
+[![Build Status](https://travis-ci.org/phenoscape/phenoscaperb.svg?branch=master)](https://travis-ci.org/phenoscape/phenoscaperb)
 
 `phenoscaperb` is a low level client for the GBIF API
 
