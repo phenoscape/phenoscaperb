@@ -30,7 +30,9 @@ module Phenoscape
     #      onto = Phenoscape::Ontotrace
     #      onto.ontotrace(taxon: "http://purl.obolibrary.org/obo/VTO_0058051", entity: "http://purl.obolibrary.org/obo/BFO_0000050")
     #      onto.ontotrace(taxon: "http://purl.obolibrary.org/obo/VTO_0058051", entity: "http://purl.obolibrary.org/obo/BFO_0000050", variable_only: false)
-    #      onto.ontotrace(taxon: "http://purl.obolibrary.org/obo/VTO_0033622", entity: "http://purl.obolibrary.org/obo/UBERON_0003097")
+    #.      
+    #.     # this one times out
+    #      # onto.ontotrace(taxon: "http://purl.obolibrary.org/obo/VTO_0033622", entity: "http://purl.obolibrary.org/obo/UBERON_0003097")
     def self.ontotrace(taxon:, entity:, variable_only: nil, verbose: nil, options: nil)
 
       arguments = { taxon: '<%s>' % taxon, entity: '<%s>' % entity, variable_only: variable_only }.tostrings
