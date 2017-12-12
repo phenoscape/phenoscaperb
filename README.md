@@ -1,13 +1,9 @@
 phenoscaperb
-======
+============
 
 [![Build Status](https://travis-ci.org/phenoscape/phenoscaperb.svg?branch=master)](https://travis-ci.org/phenoscape/phenoscaperb)
 
-`phenoscaperb` is a low level client for the GBIF API
-
-Other Phenoscape API clients:
-
-- R: ...
+`phenoscaperb` is a low level client for the Phenoscape API
 
 ## Changes
 
