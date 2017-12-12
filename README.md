@@ -18,7 +18,7 @@ Taxa
 
 Ontotrace
 
-* `/taxa` - `Phenoscape::Ontotrace.ontotrace`
+* `/ontotrace` - `Phenoscape::Ontotrace.ontotrace`
 
 ## Install
 
