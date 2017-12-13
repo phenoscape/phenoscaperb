@@ -16,6 +16,24 @@ Taxa
 * `/taxa` - `Phenoscape::Taxon.taxon`
 * `/taxon/with_rank` - `Phenoscape::Taxon.taxon_with_rank`
 
+Genes
+
+* `/gene` - `Phenoscape::Gene.gene`
+* `/gene/search` - `Phenoscape::Gene.search`
+* `/gene/affecting_entity_phenotype` - `Phenoscape::Gene.affecting_entity_phenotype`
+
+Terms
+
+* `/term` - `Phenoscape::Terms.term`
+* `/term/search` - `Phenoscape::Terms.search`
+* `/term/search_classes` - `Phenoscape::Terms.search_classes`
+* `/term/label` - `Phenoscape::Terms.label`
+* `/term/labels` - `Phenoscape::Terms.labels`
+* `/term/classification` - `Phenoscape::Terms.classification`
+* `/term/all_ancestors` - `Phenoscape::Terms.all_ancestors`
+* `/term/all_descendants` - `Phenoscape::Terms.all_descendants`
+* `/term/least_common_subsumers` - `Phenoscape::Terms.least_common_subsumers`
+
 Ontotrace
 
 * `/ontotrace` - `Phenoscape::Ontotrace.ontotrace`
