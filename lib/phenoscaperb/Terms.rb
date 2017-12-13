@@ -31,7 +31,7 @@ module Phenoscape
 
       arguments = { iri: iri }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term", opts, verbose, options).perform
+      Request.new("term", opts, verbose, options, nil).perform
     end
 
     # Search for terms in the KB by text match on a property value.
@@ -52,7 +52,7 @@ module Phenoscape
 
       arguments = { text: text, type: type, property: property }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term/search", opts, verbose, options).perform
+      Request.new("term/search", opts, verbose, options, nil).perform
     end
 
     # Search for classes from a particular ontology.
@@ -73,7 +73,7 @@ module Phenoscape
 
       arguments = { text: text, definedBy: definedBy, limit: limit }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term/search_classes", opts, verbose, options).perform
+      Request.new("term/search_classes", opts, verbose, options, nil).perform
     end
 
     # Retrieve a label for a given term IRI.
@@ -92,7 +92,7 @@ module Phenoscape
 
       arguments = { iri: iri }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term/label", opts, verbose, options).perform
+      Request.new("term/label", opts, verbose, options, nil).perform
     end
 
     # Retrieve a label for each term IRI in a list
@@ -113,7 +113,7 @@ module Phenoscape
 
       arguments = { iris: iris }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term/labels", opts, verbose, options).perform
+      Request.new("term/labels", opts, verbose, options, nil).perform
     end
 
     # Return direct superclasses, direct subclasses, and equivalent classes of a given term
@@ -132,7 +132,7 @@ module Phenoscape
 
       arguments = { iri: iri }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term/classification", opts, verbose, options).perform
+      Request.new("term/classification", opts, verbose, options, nil).perform
     end
 
     # Return all ancestor superclasses of a given term
@@ -151,7 +151,7 @@ module Phenoscape
 
       arguments = { iri: iri }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term/all_ancestors", opts, verbose, options).perform
+      Request.new("term/all_ancestors", opts, verbose, options, nil).perform
     end
 
     # Return all descendant subclasses of a given term
@@ -170,7 +170,7 @@ module Phenoscape
 
       arguments = { iri: iri }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term/all_descendants", opts, verbose, options).perform
+      Request.new("term/all_descendants", opts, verbose, options, nil).perform
     end
 
     # Return all descendant subclasses of a given term
@@ -193,7 +193,7 @@ module Phenoscape
 
       arguments = { iris: iris, definedBy: definedBy }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("term/least_common_subsumers", opts, verbose, options).perform
+      Request.new("term/least_common_subsumers", opts, verbose, options, nil).perform
     end
     
   end

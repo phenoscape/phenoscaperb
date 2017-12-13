@@ -17,12 +17,14 @@ module Phenoscape
     attr_accessor :args
     attr_accessor :verbose
     attr_accessor :options
+    attr_accessor :ret
 
-    def initialize(endpt, args, verbose, options)
+    def initialize(endpt, args, verbose, options, ret)
       self.endpt = endpt
       self.args = args
       self.verbose = verbose
       self.options = options
+      self.ret = ret
     end
 
     def perform
@@ -49,7 +51,14 @@ module Phenoscape
       if !res.headers['content-type'].match(/json/).nil?
         out = MultiJson.load(res.body)
       else
-        out = Nokogiri::XML(res.body).to_hash
+        case ret
+        when "hash"
+          out = Nokogiri::XML(res.body).to_hash
+        when "text"
+          out = res.body
+        when "noko"
+          out = Nokogiri::XML(res.body)
+        end
       end
       return out
     end

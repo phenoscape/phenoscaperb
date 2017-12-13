@@ -23,6 +23,7 @@ module Phenoscape
     # @param taxon [String] Taxonomic class expression in OWL Manchester syntax
     # @param entity [String] Anatomical class expression in OWL Manchester syntax
     # @param variable_only [boolean] whether to restrict the matrix to characters with both ‘present’ and ‘absent’ values in the matrix. default: true
+    # @param ret [String] what to return, one of hash (default), text (raw xml [nexml] as text), or noko (class 'Nokogiri::XML::Document')
     # @return [Hash] A hash
     #
     # @example
@@ -34,11 +35,11 @@ module Phenoscape
     #.      
     #.     # this one times out
     #      # onto.ontotrace(taxon: "http://purl.obolibrary.org/obo/VTO_0033622", entity: "http://purl.obolibrary.org/obo/UBERON_0003097")
-    def self.ontotrace(taxon:, entity:, variable_only: nil, verbose: nil, options: nil)
+    def self.ontotrace(taxon:, entity:, variable_only: nil, ret: "hash", verbose: nil, options: nil)
 
       arguments = { taxon: '<%s>' % taxon, entity: '<%s>' % entity, variable_only: variable_only }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("ontotrace", opts, verbose, options).perform
+      Request.new("ontotrace", opts, verbose, options, ret).perform
     end
     
   end

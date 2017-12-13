@@ -31,7 +31,7 @@ module Phenoscape
 
       arguments = { iri: iri }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("gene", opts, verbose, options).perform
+      Request.new("gene", opts, verbose, options, nil).perform
     end
 
     # Search for genes by gene symbol.
@@ -51,7 +51,7 @@ module Phenoscape
 
       arguments = { text: text, taxon: taxon }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("gene/search", opts, verbose, options).perform
+      Request.new("gene/search", opts, verbose, options, nil).perform
     end
 
     # Search for classes from a particular ontology.
@@ -76,7 +76,7 @@ module Phenoscape
         historical_homologs: historical_homologs, serial_homologs: serial_homologs, 
         limit: limit, offset: offset, total: total }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("gene/affecting_entity_phenotype", opts, verbose, options).perform
+      Request.new("gene/affecting_entity_phenotype", opts, verbose, options, nil).perform
     end
 
   end

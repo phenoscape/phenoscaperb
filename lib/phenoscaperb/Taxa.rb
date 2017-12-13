@@ -31,7 +31,7 @@ module Phenoscape
 
       arguments = { iri: iri }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("taxon", opts, verbose, options).perform
+      Request.new("taxon", opts, verbose, options, nil).perform
     end
 
     # Retrieve all taxa with a given taxonomic rank, within the given super-taxon. Ranks are term IRIs from the taxonomic rank ontology such as order, family, genus, species.
@@ -51,7 +51,7 @@ module Phenoscape
 
       arguments = { rank: rank, in_taxon: in_taxon }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("taxon/with_rank", opts, verbose, options).perform
+      Request.new("taxon/with_rank", opts, verbose, options, nil).perform
     end
     
   end
