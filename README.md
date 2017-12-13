@@ -2,6 +2,7 @@ phenoscaperb
 ============
 
 [![Build Status](https://travis-ci.org/phenoscape/phenoscaperb.svg?branch=master)](https://travis-ci.org/phenoscape/phenoscaperb)
+[![codecov.io](http://codecov.io/github/phenoscape/phenoscaperb/coverage.svg?branch=master)](http://codecov.io/github/phenoscape/phenoscaperb?branch=master)
 
 `phenoscaperb` is a low level client for the Phenoscape API
 
