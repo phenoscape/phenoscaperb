@@ -14,8 +14,10 @@ For changes see the [Changelog][changelog]
 
 Taxa
 
-* `/taxa` - `Phenoscape::Taxon.taxon`
+* `/taxon` - `Phenoscape::Taxon.taxon`
 * `/taxon/with_rank` - `Phenoscape::Taxon.taxon_with_rank`
+* `/taxon/with_phenotype` - `Phenoscape::Taxon.with_phenotype`
+* `/taxon/annotations` - `Phenoscape::Taxon.annotations`
 
 Genes
 
