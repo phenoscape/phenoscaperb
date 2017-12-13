@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://kb.phenoscape.org/api/ontotrace?entity=%3Chttp://purl.obolibrary.org/obo/BFO_0000050%3E&taxon=%3Chttp://purl.obolibrary.org/obo/VTO_0058051%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      X-User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Dec 2017 19:16:26 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - negotiate,Accept,Accept-Encoding
+      Cache-Control:
+      - must-revalidate, max-age=0, s-maxage=2592001
+      Content-Disposition:
+      - attachment; filename="ontotrace.xml"
+      Age:
+      - '20'
+      Content-Length:
+      - '575'
+      Content-Type:
+      - application/xml; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<nexml xmlns=\"http://www.nexml.org/2009\"
+        xmlns:dc=\"http://purl.org/dc/terms/\" xmlns:dwc=\"http://rs.tdwg.org/dwc/terms/\"
+        xmlns:obo=\"http://purl.obolibrary.org/obo/\" xmlns:ps=\"http://vocab.phenoscape.org/\"
+        xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        version=\"0.9\" xsi:schemaLocation=\"http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd
+        http://www.bioontologies.org/obd/schema/pheno http://purl.org/phenoscape/phenoxml.xsd\">\r\n
+        \ <meta xsi:type=\"LiteralMeta\" property=\"dc:creator\" />\r\n  <meta xsi:type=\"LiteralMeta\"
+        property=\"dc:description\">Generated from the Phenoscape Knowledgebase on
+        2017-12-13 by Ontotrace query:\r\n* taxa: &lt;http://purl.obolibrary.org/obo/VTO_0058051&gt;\r\n*
+        entities: &lt;http://purl.obolibrary.org/obo/BFO_0000050&gt;</meta>\r\n  <otus
+        id=\"ta6d3764f-2bfb-4d76-b969-ff0238ae16ca\" />\r\n  <characters id=\"d6ce9743-5270-489a-b81d-05e75015f7cf\"
+        xsi:type=\"StandardCells\" otus=\"ta6d3764f-2bfb-4d76-b969-ff0238ae16ca\">\r\n
+        \   <format />\r\n    <matrix />\r\n  </characters>\r\n  <trees id=\"t6c407f9b-7bb7-492f-8184-ff7a79deec70\"
+        otus=\"ta6d3764f-2bfb-4d76-b969-ff0238ae16ca\" />\r\n</nexml>\r\n"
+    http_version: 
+  recorded_at: Wed, 13 Dec 2017 19:16:26 GMT
+recorded_with: VCR 3.0.3

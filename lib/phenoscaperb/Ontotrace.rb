@@ -30,14 +30,14 @@ module Phenoscape
     #      require 'phenoscaperb'
     #
     #      onto = Phenoscape::Ontotrace
-    #      onto.ontotrace(taxon: "http://purl.obolibrary.org/obo/VTO_0058051", entity: "http://purl.obolibrary.org/obo/BFO_0000050")
-    #      onto.ontotrace(taxon: "http://purl.obolibrary.org/obo/VTO_0058051", entity: "http://purl.obolibrary.org/obo/BFO_0000050", variable_only: false)
+    #      onto.ontotrace(taxon: "<http://purl.obolibrary.org/obo/VTO_0058051>", entity: "<http://purl.obolibrary.org/obo/BFO_0000050>")
+    #      onto.ontotrace(taxon: "<http://purl.obolibrary.org/obo/VTO_0058051>", entity: "<http://purl.obolibrary.org/obo/BFO_0000050>", variable_only: false)
     #.      
     #.     # this one times out
     #      # onto.ontotrace(taxon: "http://purl.obolibrary.org/obo/VTO_0033622", entity: "http://purl.obolibrary.org/obo/UBERON_0003097")
     def self.ontotrace(taxon:, entity:, variable_only: nil, ret: "hash", verbose: nil, options: nil)
 
-      arguments = { taxon: '<%s>' % taxon, entity: '<%s>' % entity, variable_only: variable_only }.tostrings
+      arguments = { taxon: taxon, entity: entity, variable_only: variable_only }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
       Request.new("ontotrace", opts, verbose, options, ret).perform
     end
