@@ -71,7 +71,7 @@ module Phenoscape
     #      require 'phenoscaperb'
     #
     #      tax = Phenoscape::Taxa
-    #      tax.with_phenotype
+    #      # tax.with_phenotype
     def self.with_phenotype(entity: nil, quality: nil, in_taxon: nil, parts: false, historical_homologs: false,
         serial_homologs: false, limit: 20, offset: 0, total: false, verbose: nil, options: nil)
 
@@ -99,7 +99,7 @@ module Phenoscape
     #      require 'phenoscaperb'
     #
     #      tax = Phenoscape::Taxa
-    #      tax.annotations(entity: "http://purl.obolibrary.org/obo/UBERON_0001703", quality: "http://purl.obolibrary.org/obo/PATO_0000052", in_taxon: "http://purl.obolibrary.org/obo/VTO_0037519")
+    #      tax.annotations(entity: "http://purl.obolibrary.org/obo/UBERON_0001703", quality: "http://purl.obolibrary.org/obo/PATO_0000052", in_taxon: "http://purl.obolibrary.org/obo/VTO_0037519", parts: true, historical_homologs: false, serial_homologs: false, limit: 20, offset: 0, total: true)
     def self.annotations(entity: nil, quality: nil, in_taxon: nil, parts: false, historical_homologs: false,
         serial_homologs: false, limit: 20, offset: 0, total: false, verbose: nil, options: nil)
 
