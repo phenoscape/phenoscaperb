@@ -2,6 +2,7 @@ require "phenoscaperb/version"
 require "phenoscaperb/request"
 require "phenoscaperb/Taxa"
 require "phenoscaperb/Ontotrace"
+require "phenoscaperb/Terms"
 
 # @!macro phenoscape_params
 #   @param offset [Fixnum] Number of record to start at, any non-negative integer up to 10,000

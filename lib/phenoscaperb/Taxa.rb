@@ -12,10 +12,6 @@ require 'phenoscaperb/utils'
 # Phenoscape::Taxa
 #
 # Class to perform HTTP requests to the Phenoscape API
-# @!macro phenoscape_params
-#   @param offset [Fixnum] Number of record to start at, any non-negative integer. Default: 0
-#   @param limit [Fixnum] Number of results to return. Default: 100
-#   @param verbose [Boolean] Print request headers to stdout. Default: false
 module Phenoscape
   module Taxa
     ##
