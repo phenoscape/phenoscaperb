@@ -5,9 +5,6 @@ require "phenoscaperb/Ontotrace"
 require "phenoscaperb/Terms"
 
 # @!macro phenoscape_params
-#   @param offset [Fixnum] Number of record to start at, any non-negative integer up to 10,000
-#   @param limit [Fixnum] Number of results to return. Not relavant when searching with specific dois.
-#       Default: 20. Max: 1000
 #   @param verbose [Boolean] Print request headers to stdout. Default: false
 
 # @!macro phenoscape_options

@@ -1,0 +1,140 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://kb.phenoscape.org/api/term/search?text=fin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      X-User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Dec 2017 13:24:05 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - negotiate,Accept
+      Cache-Control:
+      - must-revalidate, max-age=0, s-maxage=2592001
+      Content-Length:
+      - '19081'
+      Age:
+      - '249'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"@id":"http://purl.obolibrary.org/obo/UBERON_0008897","label":"fin","matchType":"exact"},{"@id":"http://purl.obolibrary.org/obo/XAO_0000002","label":"fin
+        (frog)","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/ZFA_0000108","label":"fin
+        (zebrafish)","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0002000%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000468%3E%29%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fpato%23towards%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        absent","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0002291%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        agenesis","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001483%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        aplastic","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0004376","label":"fin
+        bone","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001444%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        broken","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001617%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        deformed","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000639%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        degenerate","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001368%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        erose","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0005731","label":"fin
+        field","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2005316","label":"fin
+        fold pectoral fin bud","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/ZFA_0005316","label":"fin
+        fold pectoral fin bud (zebrafish)","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0002000%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000468%3E%29%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2Fpato%23towards%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0005316%3E%29%29","label":"fin
+        fold pectoral fin bud absent","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000937%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0005316%3E%29%29","label":"fin
+        fold pectoral fin bud disorganized","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000645%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        hypoplastic","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000585%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        hypotrophic","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0001798%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        kinked","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000646%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        malformed","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000628%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        mislocalised","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000051%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        morphology","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000647%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        necrotic","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0002011%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        neoplastic","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000001%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        quality","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4400005","label":"fin
+        ray","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000700%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        rough","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000052%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        shape","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0012353","label":"fin
+        skeleton","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4200075","label":"fin
+        spine","matchType":"partial"},{"@id":"http://purl.org/phenoscape/subclassof?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_4200075%3E%0A+and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_4200023%3E%29","label":"fin
+        spine and (part_of some anterior dorsal fin)","matchType":"partial"},{"@id":"http://purl.org/phenoscape/subclassof?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_4200075%3E%0A+and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0002534%3E%29","label":"fin
+        spine and (part_of some paired fin)","matchType":"partial"},{"@id":"http://purl.org/phenoscape/subclassof?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_4200075%3E%0A+and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_4100014%3E%29","label":"fin
+        spine and (part_of some posterior dorsal fin)","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000141%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        structure","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0034723","label":"fin
+        taste bud","matchType":"partial"},{"@id":"http://purl.org/phenoscape/expression?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000051%3E+some+%0A++++%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPATO_0000967%3E%0A+++++and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000052%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FZFA_0000108%3E%29%29","label":"fin
+        undulate","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4300031","label":"fin
+        web","matchType":"partial"},{"@id":"http://purl.org/phenoscape/subclassof?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_4300031%3E%0A+and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_4000164%3E%29","label":"fin
+        web and (part_of some caudal fin)","matchType":"partial"},{"@id":"http://purl.org/phenoscape/subclassof?value=%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_4300031%3E%0A+and+%28%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000050%3E+some+%3Chttp%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000152%3E%29","label":"fin
+        web and (part_of some pelvic fin)","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2000251","label":"adipose
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2000460","label":"adipose
+        fin actinotrichium","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/041ea8e5-0689-4ee8-99d8-7d1d169d79dc#phenotype","label":"Adipose
+        Fin: Adipose fin absent","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/1b9510be-e5cf-4faf-b5b4-41b73f674b19#phenotype","label":"Adipose
+        fin: adipose fin absent","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/bcb8b3a2-4bdc-4a94-b0d2-4d21df48aa1e#phenotype","label":"Adipose
+        Fin: Adipose fin present","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/ec04b3e7-a574-4b63-9afb-8c3d3d5ad8b2#phenotype","label":"Adipose
+        fin: adipose fin present","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/20637990-869e-423d-9383-c81ff937e4a2#phenotype","label":"Adipose
+        fin: adipose fin with rays","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/920912b9-1e3b-4d69-af64-41cedbec4ac6#phenotype","label":"Adipose
+        fin: adipose fin without rays","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4000163","label":"anal
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2000375","label":"anal
+        fin actinotrichium","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4300020","label":"anal
+        fin basal cartilage","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4000176","label":"anal
+        fin lepidotrichium","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001769","label":"anal
+        fin lepidotrichium 1","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001770","label":"anal
+        fin lepidotrichium 2","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001771","label":"anal
+        fin lepidotrichium 3","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001772","label":"anal
+        fin lepidotrichium 4","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001773","label":"anal
+        fin lepidotrichium 5","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001774","label":"anal
+        fin lepidotrichium 6","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001775","label":"anal
+        fin lepidotrichium 7","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001154","label":"anal
+        fin musculature","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/869c2738-c9d1-437b-9e18-8320f3762818#phenotype","label":"Anal
+        fin overlap on caudal fin: <5%SL","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/25849146-464f-424e-921e-3998c86957ed#phenotype","label":"Anal
+        fin overlap on caudal fin: >5%SL","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/f78057c4-3a11-4074-a31f-8666c386d673#phenotype","label":"Anal
+        fin overlap on caudal fin: caudal fin unattached to anal fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4200003","label":"archipterygial
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4000164","label":"caudal
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0018325","label":"caudal
+        fin radial element","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0003097","label":"dorsal
+        fin","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/328067ba-7619-4ed9-8be5-8bcaef863289#phenotype","label":"dorsal
+        fin numbers: one fin","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/c1c03c95-4d3b-463d-ac11-18b4d80a1325#phenotype","label":"Dorsal
+        fin overlap on caudal fin: <6%SL","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/20d6b511-6234-4bfe-8de3-a9931d3277c1#phenotype","label":"Dorsal
+        fin overlap on caudal fin: >6%SL","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/2c83e76d-2279-4d31-bb44-70532962acaa#phenotype","label":"Dorsal
+        fin overlap on caudal fin: caudal fin unattached to dorsal fin","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/19daed17-f827-481f-9c43-d1ff18693a74#phenotype","label":"dorsal
+        fin squamation: crest of fin only","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/e46bff20-3df7-4fa6-847e-acad80c81a68#phenotype","label":"Dorsal
+        fin: separate dorsal fin: absent","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/00125f21-5587-4580-858f-40ea3c1367dd#phenotype","label":"Dorsal
+        fin: separate dorsal fin: present","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/ZFS_0000034","label":"Hatching:Pec-fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4000162","label":"median
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0003934","label":"mesenchyme
+        pectoral fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0003935","label":"mesenchyme
+        pelvic fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4200160","label":"mesomere
+        (fin)","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0009671","label":"nasal
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0002543","label":"obsolete
+        median fin skeleton","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_2001123","label":"obsolete
+        median fin skeleton","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0002534","label":"paired
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0002531","label":"paired
+        fin bud","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0010713","label":"paired
+        fin skeleton","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0004708","label":"paired
+        limb/fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0004357","label":"paired
+        limb/fin bud","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0007389","label":"paired
+        limb/fin cartilage","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0005732","label":"paired
+        limb/fin field","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0010538","label":"paired
+        limb/fin segment","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0011582","label":"paired
+        limb/fin skeleton","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0000151","label":"pectoral
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300172","label":"pectoral
+        fin bud","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0010710","label":"pectoral
+        fin skeleton","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0000152","label":"pelvic
+        fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/uberon/ext.owl/UBERON_4300173","label":"pelvic
+        fin bud","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0010518","label":"pelvic
+        fin clasper","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/9a92858d-e598-46ca-b860-0d0d53253eb3#phenotype","label":"Pelvic
+        fin position: slightly behind pectoral-fin base","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_0010711","label":"pelvic
+        fin skeleton","matchType":"partial"},{"@id":"http://purl.org/phenoscape/uuid/c6dcc2ad-e550-4aaf-9ca3-c4f41f89bc4f#phenotype","label":"Pelvic-fin
+        rays: end anterior to anal fin","matchType":"partial"},{"@id":"http://purl.obolibrary.org/obo/UBERON_4000182","label":"suprabranchial
+        fin","matchType":"partial"}]}'
+    http_version: 
+  recorded_at: Wed, 13 Dec 2017 13:24:05 GMT
+recorded_with: VCR 3.0.3

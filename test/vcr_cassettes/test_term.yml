@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://kb.phenoscape.org/api/term?iri=http://purl.obolibrary.org/obo/UBERON_0011618
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      X-User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Dec 2017 13:19:10 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - negotiate,Accept
+      Cache-Control:
+      - must-revalidate, max-age=0, s-maxage=2592001
+      Content-Length:
+      - '383'
+      Age:
+      - '44'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"@id":"http://purl.obolibrary.org/obo/UBERON_0011618","label":"basihyal
+        bone","definition":"Replacement bone that is median and is the anterior-most
+        bone of the ventral hyoid arch.","relationships":[{"property":{"@id":"http://purl.obolibrary.org/obo/RO_0002202","label":"develops
+        from"},"value":{"@id":"http://purl.obolibrary.org/obo/UBERON_0011615","label":"basihyal
+        cartilage"}}]}'
+    http_version: 
+  recorded_at: Wed, 13 Dec 2017 13:19:10 GMT
+recorded_with: VCR 3.0.3

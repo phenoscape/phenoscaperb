@@ -178,6 +178,7 @@ module Phenoscape
     # @!macro phenoscape_params
     # @!macro phenoscape_options
     # @param iris [String] one or more taxon IRIs
+    # @param definedBy [String] the ontology identifier IRI in which the search terms are defined, e.g. http://purl.obolibrary.org/obo/uberon.owl
     # @return [Hash] A hash
     #
     # @example
