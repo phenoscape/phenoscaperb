@@ -19,7 +19,7 @@ module Phenoscape
     #
     # @!macro phenoscape_params
     # @!macro phenoscape_options
-    # @param iri [String] a taxon IRI
+    # @param iri [String] a term IRI
     # @return [Hash] A hash
     #
     # @example

@@ -60,6 +60,12 @@ rake install
 
 ## cli
 
+cli options thus far
+
+* `ph version`
+* `ph taxon`
+* `ph term`
+
 For the `jq` command line tool see <https://stedolan.github.io/jq/>
 
 ```
