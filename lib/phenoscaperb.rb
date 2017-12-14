@@ -4,6 +4,7 @@ require "phenoscaperb/Taxa"
 require "phenoscaperb/Ontotrace"
 require "phenoscaperb/Terms"
 require "phenoscaperb/Genes"
+require "phenoscaperb/Studies"
 
 # @!macro phenoscape_params
 #   @param verbose [Boolean] Print request headers to stdout. Default: false

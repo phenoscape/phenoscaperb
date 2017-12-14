@@ -18,13 +18,15 @@ module Phenoscape
     attr_accessor :verbose
     attr_accessor :options
     attr_accessor :ret
+    attr_accessor :acchd
 
-    def initialize(endpt, args, verbose, options, ret)
+    def initialize(endpt, args, verbose, options, ret, acchd = "application/json")
       self.endpt = endpt
       self.args = args
       self.verbose = verbose
       self.options = options
       self.ret = ret
+      self.acchd = acchd
     end
 
     def perform
@@ -45,13 +47,16 @@ module Phenoscape
 
       conn.headers[:user_agent] = make_ua
       conn.headers["X-USER-AGENT"] = make_ua
+      if !self.acchd.nil?
+        conn.headers["Accept"] = self.acchd
+      end
 
       res = conn.get self.endpt, self.args
       
       if !res.headers['content-type'].match(/json/).nil?
         out = MultiJson.load(res.body)
-      else
-        case ret
+      else  
+        case self.ret
         when "hash"
           out = Nokogiri::XML(res.body).to_hash
         when "text"
@@ -60,7 +65,9 @@ module Phenoscape
           out = Nokogiri::XML(res.body)
         end
       end
+
       return out
+
     end
 
   end

@@ -68,8 +68,8 @@ module Phenoscape
     #      require 'phenoscaperb'
     #
     #      tm = Phenoscape::Terms
-    #      tm.search_classes(text: "fin")
-    def self.search_classes(text:, definedBy: nil, limit: nil, verbose: nil, options: nil)
+    #      tm.search_classes(text: "fin", definedBy: "??")
+    def self.search_classes(text:, definedBy:, limit: nil, verbose: nil, options: nil)
 
       arguments = { text: text, definedBy: definedBy, limit: limit }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
@@ -187,7 +187,7 @@ module Phenoscape
     #      tm = Phenoscape::Terms
     #      tm.least_common_subsumers(
     #         iris: "http://purl.obolibrary.org/obo/UBERON_0011618",
-    #.        definedBy: ""     
+    #.        definedBy: "??"
     #      )
     def self.least_common_subsumers(iris:, definedBy:, verbose: nil, options: nil)
 

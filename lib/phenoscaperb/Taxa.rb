@@ -71,6 +71,7 @@ module Phenoscape
     #      require 'phenoscaperb'
     #
     #      tax = Phenoscape::Taxa
+    #      # FIXME: get examples that don't take super long to run
     #      # tax.with_phenotype
     def self.with_phenotype(entity: nil, quality: nil, in_taxon: nil, parts: false, historical_homologs: false,
         serial_homologs: false, limit: 20, offset: 0, total: false, verbose: nil, options: nil)

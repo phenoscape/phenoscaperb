@@ -39,7 +39,7 @@ module Phenoscape
 
       arguments = { taxon: taxon, entity: entity, variable_only: variable_only }.tostrings
       opts = arguments.delete_if { |k, v| v.nil? }
-      Request.new("ontotrace", opts, verbose, options, ret).perform
+      Request.new("ontotrace", opts, verbose, options, ret, "application/xml").perform
     end
     
   end
