@@ -41,6 +41,13 @@ Ontotrace
 
 * `/ontotrace` - `Phenoscape::Ontotrace.ontotrace`
 
+Studies
+
+* `/studies/query` - `Phenoscape::Studies.query`
+* `/studies/taxa` - `Phenoscape::Studies.taxa`
+* `/studies/phenotypes` - `Phenoscape::Studies.phenotypes`
+* `/studies/matrix` - `Phenoscape::Studies.matrix`
+
 ## Install
 
 ### Development version
