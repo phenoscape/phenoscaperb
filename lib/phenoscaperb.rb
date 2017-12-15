@@ -23,7 +23,7 @@ require "phenoscaperb/Studies"
 #     - oauth [Hash] A hash with OAuth details
 
 ##
-# Phenoscape - The top level module for using methods to access the GBIF API
+# Phenoscape - The top level module for using methods to access the Phenoscape API
 
 module Phenoscape
   extend Configuration
