@@ -58,6 +58,18 @@ cd phenoscaperb
 rake install
 ```
 
+## Setup
+
+You can swap out the base URL by passing named options in a block to `Phenoscape.configuration`.
+
+This will also be the way to set up other user options, if any are needed down the road (though `base_url` is the only one right now).
+
+```ruby
+Phenoscape.configuration do |config|
+  config.base_url = "the new url"
+end
+```
+
 ## cli
 
 cli options thus far
