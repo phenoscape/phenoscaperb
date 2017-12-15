@@ -71,8 +71,8 @@ module Phenoscape
     #      require 'phenoscaperb'
     #
     #      tax = Phenoscape::Taxa
-    #      # FIXME: get examples that don't take super long to run
-    #      # tax.with_phenotype
+    #      tax.with_phenotype(entity: "<http://purl.obolibrary.org/obo/UBERON_0008897>", quality: "<http://purl.obolibrary.org/obo/PATO_0000052>", in_taxon: "http://purl.obolibrary.org/obo/VTO_0059975")
+    #      tax.with_phenotype(entity: "<http://purl.obolibrary.org/obo/UBERON_0008897>", quality: "<http://purl.obolibrary.org/obo/PATO_0000052>", in_taxon: "http://purl.obolibrary.org/obo/VTO_0059975", total: true)
     def self.with_phenotype(entity: nil, quality: nil, in_taxon: nil, parts: false, historical_homologs: false,
         serial_homologs: false, limit: 20, offset: 0, total: false, verbose: nil, options: nil)
 
