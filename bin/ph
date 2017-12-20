@@ -41,22 +41,6 @@ class Sr < Thor
     puts Phenoscape::VERSION
   end
 
-  # private
-
-  # def print_works(data)
-  #   if data.is_a? Array
-  #     data = data[0]['message']['items']
-  #   else
-  #     data = data.collect { |x| x['message'].select { |k,v| k[/DOI|type|title/] } }
-  #   end
-  #   data.each do |x|
-  #     puts 'DOI: ' + x['DOI']
-  #     puts 'type: ' + x['type']
-  #     puts 'title: ' + x['title'][0]
-  #     puts
-  #   end
-  # end
-
 end
 
 Sr.start(ARGV)

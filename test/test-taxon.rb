@@ -11,7 +11,7 @@ require "test/unit"
 require "json"
 require_relative "test-helper"
 
-class TestWorks < Test::Unit::TestCase
+class TestTaxon < Test::Unit::TestCase
 
   def test_taxon
     VCR.use_cassette("test_taxon") do

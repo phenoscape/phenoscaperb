@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://kb.phenoscape.org/api/gene?iri=http://www.informatics.jax.org/marker/MGI:104842
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      X-User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Dec 2017 02:05:03 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - negotiate,Accept
+      Cache-Control:
+      - must-revalidate, max-age=0, s-maxage=2592001
+      Content-Length:
+      - '161'
+      Age:
+      - '312'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"@id":"http://www.informatics.jax.org/marker/MGI:104842","label":"Coil","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_10090","label":"Mus
+        musculus"}}'
+    http_version: 
+  recorded_at: Wed, 20 Dec 2017 02:05:03 GMT
+recorded_with: VCR 3.0.3

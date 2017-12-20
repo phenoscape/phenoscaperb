@@ -46,7 +46,7 @@ module Phenoscape
     #      require 'phenoscaperb'
     #
     #      ge = Phenoscape::Genes
-    #      ge.search(text: "fin")
+    #      ge.search(text: "coil")
     def self.search(text:, taxon: nil, verbose: nil, options: nil)
 
       arguments = { text: text, taxon: taxon }.tostrings
@@ -68,7 +68,7 @@ module Phenoscape
     #      require 'phenoscaperb'
     #
     #      ge = Phenoscape::Genes
-    #      ge.affecting_entity_phenotype(iri: "http://purl.obolibrary.org/obo/AEO_0001004")
+    #      ge.affecting_entity_phenotype(iri: "http://purl.obolibrary.org/obo/UBERON_0003097")
     def self.affecting_entity_phenotype(iri:, quality: nil, parts: nil, historical_homologs: nil,
         serial_homologs: nil, limit: nil, offset: nil, total: nil, verbose: nil, options: nil)
 

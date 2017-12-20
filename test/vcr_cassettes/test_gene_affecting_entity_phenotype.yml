@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://kb.phenoscape.org/api/gene/affecting_entity_phenotype?iri=http://purl.obolibrary.org/obo/UBERON_0003097
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      X-User-Agent:
+      - Faraday/v0.13.1 Phenoscaperb/v0.1.0
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Dec 2017 02:05:03 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - negotiate,Accept
+      Cache-Control:
+      - must-revalidate, max-age=0, s-maxage=2592001
+      Content-Length:
+      - '2978'
+      Age:
+      - '93'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"@id":"http://zfin.org/ZDB-GENE-070117-2062","label":"edar","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-001228-1","label":"eomesa","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-060526-68","label":"fras1","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-081119-1","label":"frem1a","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-081119-3","label":"frem2a","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-990415-224","label":"fzd2","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-030828-5","label":"hes6","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-030131-4827","label":"hhip","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-041014-322","label":"hmcn1","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-050411-55","label":"itga3b","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-040426-1297","label":"kcnk5b","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-030131-9823","label":"lama5","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-990714-26","label":"lef1","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-070117-2179","label":"lof","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-060503-667","label":"rspo2","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-070117-2392","label":"sub","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-070117-2443","label":"tut","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-120403-1","label":"unm_dhi862","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-070117-1443","label":"unm_t30457","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}},{"@id":"http://zfin.org/ZDB-GENE-070117-1188","label":"unm_t30602","taxon":{"@id":"http://purl.obolibrary.org/obo/NCBITaxon_7955","label":"Danio
+        rerio"}}]}'
+    http_version: 
+  recorded_at: Wed, 20 Dec 2017 02:05:03 GMT
+recorded_with: VCR 3.0.3
