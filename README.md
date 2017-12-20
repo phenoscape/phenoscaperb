@@ -83,6 +83,8 @@ end
 
 ## in Ruby
 
+A few examples
+
 `Phenoscape::Taxa.taxon`
 
 ```ruby
