@@ -41,20 +41,3 @@ end
 def stop(x)
   raise ArgumentError, x
 end
-
-# def get_meta(x)
-#   if has_meta(x)
-#     return { z: x[z] for z in ['offset','limit','endOfRecords'] }
-#   else
-#     return nil
-#   end
-# end
-
-# def has_meta(x)
-#   if x.__class__ != dict
-#     return false
-#   else
-#     tmp = [y in x.keys() for y in ['offset','limit','endOfRecords']]
-#     return True in tmp
-#   end
-# end
